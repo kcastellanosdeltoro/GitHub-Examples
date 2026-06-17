@@ -31,12 +31,26 @@ workspaces/GitHub-Examples (main) $ cd ..
 ```sh
 git clone https://github.com/kcastellanosdeltoro/GitHub-Examples.git
 ```
-
+## How To Create SSH Key
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub | clip
+```
+> The last command don't show any message but the key text is already copy, after that you should add the key in GitHub.
 ## SSH
 You need SSH Key in your device pairing in GitHub
 ```sh
 git clone git@github.com:kcastellanosdeltoro/GitHub-Examples.git
 ```
+## Git CLI (Command Line Interface)
+First you need install the Git CLI with following command.
+```sh
+winget install --id GitHub.cli
+gh repo clone kcastellanosdeltoro/GitHub-Examples
+```
+
 ## Add
 Following command allow us add file to Staged.
 `git add namefile.txt`
