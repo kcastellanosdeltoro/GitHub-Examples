@@ -31,6 +31,12 @@ workspaces/GitHub-Examples (main) $ cd ..
 ```sh
 git clone https://github.com/kcastellanosdeltoro/GitHub-Examples.git
 ```
+
+## SSH
+You need SSH Key in your device pairing in GitHub
+```sh
+git clone git@github.com:kcastellanosdeltoro/GitHub-Examples.git
+```
 ## Add
 Following command allow us add file to Staged.
 `git add namefile.txt`
